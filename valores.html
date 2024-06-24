@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valores</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Baloo 2', cursive;
+            background-image: url("../pint.jpg");
+            margin: 0;
+            padding: 0;
+        }
+        .gif-top-left, .gif-top-right, .gif-bottom-left, .gif-bottom-right {
+            position: absolute;
+            width: 200px; 
+            z-index: -1; 
+        }
+
+        .gif-top-left {
+            top: 300px;
+            left: 50px;
+        }
+
+        .gif-top-right {
+            top: 300px;
+            right: 50px;
+        }
+
+        .gif-bottom-left {
+            bottom: 50px;
+            left: 10px;
+        }
+
+        .gif-bottom-right {
+            bottom: 50px;
+            right: 10px;
+        }
+
+
+        header {
+            background-color: #C7DDFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 3em;
+            font-family: 'Broadway', serif;
+            color: #000000;
+        }
+
+        main {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        section {
+            margin-bottom: 20px;
+            padding: 20px;
+            width: 80%;
+            max-width: 800px;
+            background-color: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            transform: translateY(50px);
+            opacity: 0;
+            transition: transform 0.5s, opacity 0.5s;
+        }
+
+        h2 {
+            color: #FF5050;
+            font-family: 'Cooper Black', serif;
+            font-size: 2em;
+        }
+
+        h3 {
+            color: #FFC7C7;
+            font-family: 'Cooper Black', serif;
+            font-size: 1.8em; /* Aumento de tamaño */
+        }
+
+        .values ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .values ul li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .values ul li::before {
+            content: '●'; /* Cambiado el punto por un círculo sólido */
+            position: absolute;
+            left: 0;
+            color: #FFC7C7;
+        }
+
+        .values ul li p {
+            margin: 0;
+            font-size: 1.6em; /* Aumento de tamaño */
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            section {
+                padding: 15px;
+                width: 90%;
+            }
+        }
+
+        .botonx, .botonactivo {
+            padding: 10px 20px; 
+            border-radius: 20px;
+            text-decoration: none; 
+            transition: background-color 0.5s, color 0.5s; 
+            margin: 5px;
+        }
+
+        .botonx {
+            color: #455AA5;
+        }
+
+        .botonx:hover {
+            background-color: #E9FDFF; 
+            color: #3B43FF; 
+        }
+
+        .botonactivo {
+            background-color: #003989; 
+            color: #ffffff; 
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div style="background-color: #C7DDFF; width: 100%; height: 100%;">
+            <table border="0">
+                <tr>
+                    <td style="width: 300px;">
+                       <a href="..\..\dulces\pantallainicio.html"> <img src="..\..\dulces/arc/logo.png" width="130" height="130" alt="Logo"></a> <!-- Corregido el cierre de la etiqueta a de la imagen -->
+                    </td>
+                    <td>
+                        <table border="0">
+                            <tr>
+                                <td>
+                                    <b><font size="4" face="Arial">
+                                        <a href="..\..\dulces\Quienessomos.html" class="botonx">Quienes somos</a>
+                                        <a href="..\..\dulces\Un mundo mejor.html" class="botonx">Un mundo mejor</a>
+                                        <a href="..\..\dulces\INNOVACION.html" class="botonx">Innovación</a> 
+                                        <a href="..\..\dulces\POLITICAS.html" class="botonx">Políticas</a> <!-- Corregido Pol�ticas -->
+                                        <a href="..\..\dulces\mision.html" class="botonx">Misión</a> <!-- Corregido Misi�n -->
+                                        <a href="..\..\dulces\historia.html" class="botonx">Historia</a>
+                                        <br><br><br>
+                                    </font></b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td> 
+                                    <center>
+                                        <b><font size="4" face="Arial">
+                                            <a href="..\..\dulces\vision.html" class="botonx">Visión</a> <!-- Corregido Visi�n -->
+                                            <a href="..\..\dulces\visitanos.html" class="botonx">Visítanos</a> <!-- Corregido Vis�tanos -->
+                                            <a href="..\..\dulces\productos.html" class="botonx">Producto</a>
+                                            <a href="..\..\dulces\logo.html" class="botonx">Logo</a>
+                                            <a href="..\..\dulces\contacto.html" class="botonx">Contacto</a>
+                                            <a href="..\..\dulces\valores.html" class="botonactivo">Valores</a>
+                                        </font></b>
+                                    </center>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td style="vertical-align: top; width: 300px; text-align: right;">
+                        <br>
+                        <a href="..\..\dulces\carrito.html">
+                            <img src="..\..\dulces/arc/tienda.png" width="50" height="50" alt="Tienda">
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </center>
+    <header>
+        <h1>Valores</h1>
+    </header>
+    <main>
+        <section class="values">
+            <h2>Valores</h2>
+            <ul>
+                <li><h3>Calidad</h3><p>Nos comprometemos a ofrecer productos de la más alta calidad para satisfacer las expectativas de nuestros clientes.</p></li>
+                <li><h3>Creatividad</h3><p>Fomentamos la creatividad y la innovación en todos los aspectos de nuestro negocio para ofrecer soluciones únicas y atractivas.</p></li>
+                <li><h3>Excelencia</h3><p>Buscamos la excelencia en cada detalle, desde la producción hasta el servicio al cliente.</p></li>
+                <li><h3>Pasión</h3><p>Trabajamos con pasión y dedicación para crear productos que alegren la vida de nuestras mascotas y sus dueños.</p></li>
+                <li><h3>Autenticidad</h3><p>Mantenemos la autenticidad en nuestros productos y prácticas, asegurando transparencia y honestidad en todo lo que hacemos.</p></li>
+                <li><h3>Responsabilidad</h3><p>Asumimos la responsabilidad de nuestros actos y sus impactos en la sociedad y el medio ambiente.</p></li>
+                <li><h3>Atención al Cliente</h3><p>Nos enfocamos en proporcionar una atención al cliente excepcional, respondiendo a las necesidades y expectativas de nuestros clientes.</p></li>
+                <li><h3>Sostenibilidad</h3><p>Promovemos prácticas sostenibles que minimicen nuestro impacto ambiental y contribuyan a un futuro más verde.</p></li>
+                <li><h3>Diversidad</h3><p>Valoramos y respetamos la diversidad, creando un ambiente inclusivo para todos nuestros empleados y clientes.</p></li>
+                <li><h3>Comunidad</h3><p>Nos dedicamos a apoyar y fortalecer las comunidades en las que operamos, fomentando el bienestar y la cohesión social.</p></li>
+            </ul>
+        </section>
+    </main>
+    <script>
+        window.addEventListener('load', () => {
+            const section = document.querySelector('section');
+            section.style.transform = 'translateY(0)';
+            section.style.opacity = '1';
+        });
+    </script>
+
+    <img src="../../dulces/arc/giphy.webp" class="gif-top-left" alt="GIF">
+
+    <img src="../../dulces/arc/giphy.webp" class="gif-top-right" alt="GIF">
+    
+    <img src="../../dulces/arc/giphy.webp" class="gif-bottom-left" alt="GIF">
+    
+    <img src="../../dulces/arc/giphy.webp" class="gif-bottom-right" alt="GIF">
+    
+</body>
+</html>

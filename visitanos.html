@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Visítanos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Baloo 2', cursive;
+            background-image: url("../pint.jpg");
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #C7DDFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            animation: fadeIn 2s;
+        }
+
+        h1 {
+            font-family: 'Broadway', serif;
+            margin: 0;
+            font-size: 3em;
+            color: #000000;
+            animation: slideIn 1s ease-out;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70vh;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .visit-info {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: scaleUp 1s ease-in-out;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            max-width: 1000px;
+        }
+
+        .visit-info img {
+            width: 400px;
+            height: auto;
+            border-radius: 10px;
+            margin-right: 30px;
+            transition: transform 0.3s ease;
+        }
+
+        .visit-info img:hover {
+            transform: scale(1.1);
+        }
+
+        .visit-info h3 {
+            font-family: 'Cooper Black', sans-serif;
+            margin-bottom: 20px;
+            color: #FF5050;
+        }
+
+        .visit-info p {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+
+        .map-icon {
+            display: inline-block;
+            margin-top: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .map-icon img {
+            width: 70px;
+            height: 70px;
+            cursor: pointer;
+        }
+
+        .map-icon:hover {
+            transform: scale(1.2);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-100%); }
+            to { transform: translateY(0); }
+        }
+
+        @keyframes scaleUp {
+            from { transform: scale(0.8); }
+            to { transform: scale(1); }
+        }
+
+        .botonx, .botonactivo {
+            padding: 10px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            transition: background-color 0.5s, color 0.5s;
+            margin: 5px;
+        }
+
+        .botonx {
+            color: #455AA5;
+        }
+
+        .botonx:hover {
+            background-color: #E9FDFF;
+            color: #3B43FF;
+        }
+
+        .botonactivo {
+            background-color: #003989;
+            color: #ffffff;
+        }
+
+        .gif-top-left, .gif-top-right, .gif-bottom-left, .gif-bottom-right {
+            position: absolute;
+            width: 200px;
+            z-index: -1;
+        }
+
+        .gif-top-left {
+            top: 300px;
+            left: 50px;
+        }
+
+        .gif-top-right {
+            top: 300px;
+            right: 50px;
+        }
+
+        .gif-bottom-left {
+            bottom: 50px;
+            left: 10px;
+        }
+
+        .gif-bottom-right {
+            bottom: 50px;
+            right: 10px;
+        }
+
+    </style>
+</head>
+<body>
+<center>
+    <div style="background-color: #C7DDFF; width: 100%; height: 100%;">
+        <table border="0">
+            <tr>
+                <td style="width: 300px;">
+                     <a href="..\..\dulces\pantallainicio.html"> <img src="..\..\dulces/arc/logo.png" width="130" height="130" alt="Logo"><a>   </td>
+                <td>
+                    <table border="0">
+                        <tr>
+                            <td>
+                                <b><font size="4" face="Arial">
+                                    <a href="..\..\dulces\Quienessomos.html" class="botonx">Quienes somos</a>
+                                    <a href="..\..\dulces\Un mundo mejor.html" class="botonx">Un mundo mejor</a>
+                                    <a href="..\..\dulces\INNOVACION.html" class="botonx">Innovación</a>
+                                    <a href="..\..\dulces\POLITICAS.html" class="botonx">Políticas</a>
+                                    <a href="..\..\dulces\mision.html" class="botonx">Misión</a>
+                                    <a href="..\..\dulces\historia.html" class="botonx">Historia</a>
+                                    <br><br><br>
+                                </font></b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>			
+                             <center>				
+                                <b><font size="4" face="Arial">
+                                    <a href="..\..\dulces\vision.html" class="botonx">Visión</a>
+                                    <a href="..\..\dulces\visitanos.html" class="botonactivo">Visítanos</a>
+                                    <a href="..\..\dulces\productos.html" class="botonx">Producto</a>
+                                    <a href="..\..\dulces\logo.html" class="botonx">Logo</a>
+                                    <a href="..\..\dulces\contacto.html" class="botonx">Contacto</a>
+                                    <a href="..\..\dulces\valores.html" class="botonx">Valores</a>
+                                </font></b>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td style="vertical-align: top; width: 300px; text-align: right;">
+                    <br>
+                    <a href="..\..\dulces\carrito.html">
+                        <img src="..\..\dulces/arc/tienda.png" width="50" height="50" alt="Tienda">
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </div>
+</center>
+    <header>
+        <h1>¡Visítanos!</h1>
+    </header>
+    <main>
+        <section class="visit-info">
+            <img src="../local.jpeg" alt="Imagen del Local">
+            <div>
+                <h3>Nuestra Ubicación</h3>
+                <p>Estamos ubicados en:</p>
+                <p>Av. España #11-A Fraccionamiento</p>
+                <p>Tepic, México</p>
+                <p>Horarios de atención:</p>
+                <p>Lunes a Viernes: 9:00 AM - 6:00 PM</p>
+                <p>Sábados: 10:00 AM - 4:00 PM</p>
+                <p>Domingos: Cerrado</p>
+                <a href="https://maps.app.goo.gl/eS6DtaAzN1bXHdNL6" class="map-icon">
+                    <img src="../maps.jpg" alt="Icono de Google Maps">
+                </a>
+            </div>
+        </section>
+    </main>
+    <!-- GIFs decorativos -->
+    <img src="../../dulces/arc/giphy.webp" class="gif-top-left" alt="GIF">
+    <img src="../../dulces/arc/giphy.webp" class="gif-top-right" alt="GIF">
+    <img src="../../dulces/arc/giphy.webp" class="gif-bottom-left" alt="GIF">
+    <img src="../../dulces/arc/giphy.webp" class="gif-bottom-right" alt="GIF">
+</body>
+</html>

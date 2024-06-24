@@ -1,0 +1,256 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Un Mundo Mejor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Baloo 2', cursive;
+            background-image: url("../pint.jpg");
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #C7DDFF;
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 2px solid #FFF271;
+            animation: fadeInDown 1.5s ease-out;
+        }
+
+        header h1 {
+            margin: 0;
+            font-family: Broadway, sans-serif;
+            font-size: 3em;
+            color: #000;
+        }
+
+        main {
+            padding: 20px;
+            animation: fadeIn 2s ease-in;
+        }
+
+        .info {
+            margin: 20px auto;
+            background-color: rgba(255, 242, 113, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 80%;
+            max-width: 950px;
+            font-size: 1.2em; /* Tamaño base de la fuente */
+        }
+
+        .info h2 {
+            font-family: 'Cooper Black', sans-serif;
+            color: #FF5050;
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .info p {
+            text-align: justify;
+            line-height: 1.6;
+            font-size: 1.2em; /* Ajusta el tamaño de la fuente como desees */
+        }
+
+        .info h3 {
+            font-family: 'Baloo 2', cursive;
+            color: #FF5050;
+            font-size: 1.8em;
+            margin-top: 20px;
+        }
+
+        .info ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .info ul li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+            font-size: 1.1em; /* Ajusta el tamaño de la fuente como desees */
+        }
+
+        .info ul ul {
+            margin-left: 20px;
+            list-style-type: disc;
+        }
+
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+            position: relative;
+        }
+
+        .image-container img {
+            max-width: 50%;
+            height: auto;
+            border-radius: 50%; /* Hace que la imagen sea redonda */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .image-container img:hover {
+            transform: scale(1.05);
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .botonx, .botonactivo {
+            padding: 10px 20px; 
+            border-radius: 20px;
+            text-decoration: none; 
+            transition: background-color 0.5s, color 0.5s; 
+            margin: 5px;
+        }
+
+        .botonx {
+            color: #455AA5;
+        }
+
+        .botonx:hover {
+            background-color: #E9FDFF; 
+            color: #3B43FF; 
+        }
+
+        .botonactivo {
+            background-color: #003989; 
+            color: #ffffff; 
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <div style="background-color: #C7DDFF; width: 100%; height: 100%;">
+            <table border="0">
+                <tr>
+                    <td style="width: 300px;">
+                        <a href="..\..\dulces\pantallainicio.html"> <img src="..\..\dulces/arc/logo.png" width="130" height="130" alt="Logo"></a>
+                    </td>
+                    <td>
+                        <table border="0">
+                            <tr>
+                                <td>
+                                    <b><font size="4" face="Arial">
+                                        <a href="..\..\dulces\Quienessomos.html" class="botonx">Quiénes somos</a>
+                                        <a href="..\..\dulces\Un mundo mejor.html" class="botonactivo">Un mundo mejor</a>
+                                        <a href="..\..\dulces\INNOVACION.html" class="botonx">Innovación</a>
+                                        <a href="..\..\dulces\POLITICAS.html" class="botonx">Políticas</a>
+                                        <a href="..\..\dulces\mision.html" class="botonx">Misión</a>
+                                        <a href="..\..\dulces\historia.html" class="botonx">Historia</a>
+
+                                        <br><br><br>
+                                    </font></b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <center>
+                                        <b><font size="4" face="Arial">
+                                            <a href="..\..\dulces\vision.html" class="botonx">Visión</a>
+                                            <a href="..\..\dulces\visitanos.html" class="botonx">Visítanos</a>
+                                            <a href="..\..\dulces\productos.html" class="botonx">Producto</a>
+                                            <a href="..\..\dulces\logo.html" class="botonx">Logo</a>
+                                            <a href="..\..\dulces\contacto.html" class="botonx">Contacto</a>
+                                            <a href="..\..\dulces\valores.html" class="botonx">Valores</a>
+
+                                        </font>
+                                        </b>
+                                    </center>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td style="vertical-align: top; width: 300px; text-align: right;">
+                        <br>
+                        <a href="..\..\dulces\carrito.html">
+                            <img src="..\..\dulces/arc/tienda.png" width="50" height="50" alt="Tienda" class="botonx">
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </center>
+
+    <header>
+        <h1>Un Mundo Mejor</h1>
+    </header>
+    <main>
+        <section class="info">
+            <h2>En Dulces Sueños, nos apasiona crear un mundo mejor para nuestras mascotas.</h2>
+            
+            <p>Creemos que cada mascota merece ser tratada con amor y cuidado, incluso cuando se trata de sus golosinas favoritas. Por eso, nos comprometemos a ofrecer productos que no solo sean deliciosos, sino también saludables y sostenibles.</p>
+            <h3>Nuestros Compromisos:</h3>
+            <ul>
+                <li><strong>Ingredientes Naturales y Saludables:</strong>
+                    <ul>
+                        <li>Utilizamos solo ingredientes de la más alta calidad, orgánicos y libres de pesticidas.</li>
+                        <li>Evitamos aditivos como colorantes, sabores artificiales y conservantes.</li>
+                    </ul>
+                </li>
+               
+                <li><strong>Sostenibilidad Ambiental:</strong>
+                    <ul>
+                        <li>Nuestros empaques son biodegradables o reciclables para reducir nuestro impacto en el medio ambiente.</li>
+                        <li>Nos aseguramos de que todos nuestros ingredientes provengan de fuentes sostenibles y éticas.</li>
+                    </ul>
+                </li>
+                <li><strong>Innovación en Productos:</strong>
+                    <ul>
+                        <li>Ofrecemos una amplia variedad de sabores y texturas para satisfacer las preferencias y necesidades dietéticas de todas las mascotas.</li>
+                        <li>Desarrollamos productos funcionales que ofrecen beneficios adicionales para la salud de las mascotas.</li>
+                    </ul>
+                </li>
+                <li><strong>Bienestar Animal:</strong>
+                    <ul>
+                        <li>Nos comprometemos a no realizar pruebas en animales y a utilizar métodos de prueba alternativos y éticos.</li>
+                        <li>Colaboramos con refugios de animales y organizaciones sin fines de lucro para apoyar el bienestar animal.</li>
+                    </ul>
+                </li>
+                <li><strong>Educación y Comunidad:</strong>
+                    <ul>
+                        <li>Proporcionamos información educativa sobre la nutrición y el cuidado de las mascotas para ayudar a los dueños a tomar decisiones informadas.</li>
+                        <li> Creamos una comunidad en línea donde los amantes de las mascotas pueden compartir experiencias y consejos.</li>
+                    </ul>
+                </li>
+                <li><strong>Responsabilidad Social:</strong>
+                    <ul>
+                        <li>Garantizamos que todos nuestros empleados y proveedores sean tratados con justicia y reciban un pago justo.</li>
+                        <li>Participamos en proyectos comunitarios y actividades de voluntariado para contribuir positivamente a nuestra comunidad.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
